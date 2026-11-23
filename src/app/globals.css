@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-brand-ink antialiased;
+  }
+
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  ::selection {
+    @apply bg-brand text-brand-ink;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-hover ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-brand-soft px-4 py-1.5 text-xs font-bold uppercase tracking-[0.16em] text-brand-ink ring-1 ring-brand/60;
+  }
+
+  .heading-xl {
+    @apply text-3xl font-extrabold leading-tight tracking-tight text-brand-ink sm:text-4xl lg:text-5xl;
+  }
+
+  .heading-lg {
+    @apply text-2xl font-extrabold leading-tight tracking-tight text-brand-ink sm:text-3xl lg:text-4xl;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-hover focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand text-brand-ink shadow-glow hover:-translate-y-0.5 hover:bg-brand-hover;
+  }
+
+  .btn-outline {
+    @apply btn border border-brand-border bg-white text-brand-ink hover:-translate-y-0.5 hover:border-brand hover:bg-brand-soft;
+  }
+
+  .btn-dark {
+    @apply btn bg-brand-ink text-white hover:-translate-y-0.5 hover:bg-zinc-800;
+  }
+
+  .card {
+    @apply rounded-2xl border border-brand-border bg-white shadow-card;
+  }
+
+  .field-label {
+    @apply mb-1.5 block text-xs font-bold uppercase tracking-wide text-brand-muted;
+  }
+
+  .field-input {
+    @apply w-full rounded-xl border border-brand-border bg-white px-4 py-3 text-sm font-medium text-brand-ink placeholder:text-zinc-400 focus:border-brand-hover focus:outline-none focus:ring-2 focus:ring-brand/50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .pattern-dots {
+    background-image: radial-gradient(rgba(24, 24, 27, 0.12) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+
+  .mask-fade-r {
+    -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,2 @@
+# Permanent redirect from root to the default (Indonesian) locale.
+/  /id/  301

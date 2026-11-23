@@ -93,7 +93,7 @@ const id = {
       {
         title: "Harga Jujur & Transparan",
         description:
-          "Tarif jelas harian maupun mingguan tanpa biaya tersembunyi. Bayar saat serah terima.",
+          "Tarif harian jelas dan transparan tanpa biaya tersembunyi. Bayar saat serah terima.",
       },
       {
         title: "Gratis Antar-Jemput",
@@ -387,7 +387,7 @@ const en: Dictionary = {
       {
         title: "Honest & Transparent Rates",
         description:
-          "Clear daily and weekly pricing with zero hidden fees. Pay upon handover.",
+          "Clear daily pricing with zero hidden fees. Pay upon handover.",
       },
       {
         title: "Free Delivery & Pick-Up",

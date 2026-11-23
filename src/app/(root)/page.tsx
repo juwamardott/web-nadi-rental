@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Nadi Rental Bali — Sewa Motor Bali Terpercaya",
@@ -32,12 +33,12 @@ export default function RootRedirectPage() {
           <p className="text-sm font-bold text-brand-ink">
             Mengalihkan ke Nadi Rental Bali…
           </p>
-          <a
+          <Link
             href="/id/"
             className="mt-3 inline-block text-sm font-semibold text-brand-ink underline"
           >
             Buka halaman Bahasa Indonesia
-          </a>
+          </Link>
         </div>
       </main>
     </>

@@ -111,7 +111,7 @@ export function HeroSection({ lang, dict }: HeroSectionProps) {
           <div className="relative overflow-hidden rounded-[1.75rem] border-4 border-white bg-brand-surface shadow-lift">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/gallery/riding-coast.jpg"
+                src="/images/gallery/hero.webp"
                 alt={dict.hero.imageAlt}
                 fill
                 priority

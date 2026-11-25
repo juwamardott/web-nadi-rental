@@ -109,13 +109,16 @@ export function ContactSection({ lang, dict }: ContactSectionProps) {
               src={BUSINESS_INFO.mapEmbed}
               title={dict.contact.mapTitle}
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
               className="h-72 w-full border-0 lg:h-full"
             />
+
             <div className="flex items-center justify-between gap-3 px-4 py-3">
               <p className="text-xs font-bold text-brand-ink">
                 {dict.contact.mapTitle}
               </p>
+
               <a
                 href={BUSINESS_INFO.googleMapsLink}
                 target="_blank"
@@ -127,6 +130,7 @@ export function ContactSection({ lang, dict }: ContactSectionProps) {
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </section>

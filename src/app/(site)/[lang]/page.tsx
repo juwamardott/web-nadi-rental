@@ -7,6 +7,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { GalleryReviews } from "@/components/GalleryReviews";
 import { HeroSection } from "@/components/HeroSection";
 import { getDictionary } from "@/data/dictionary";
+import { buildJsonLd } from "@/lib/seo";
 import { isLang } from "@/lib/types";
 
 interface LangPageProps {
@@ -19,8 +20,14 @@ export default async function LangPage({ params }: LangPageProps) {
   const lang = rawLang;
   const dict = getDictionary(lang);
 
+  const jsonLd = buildJsonLd(lang, dict);
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection lang={lang} dict={dict} />
       <AboutSection dict={dict} />
       <FeaturesSection dict={dict} />

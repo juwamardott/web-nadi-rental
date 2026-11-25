@@ -8,6 +8,7 @@ import {
   MessageCircle,
   Phone,
 } from "lucide-react";
+import { AREAS } from "@/data/areas";
 import { BUSINESS_INFO, POPULAR_BIKES } from "@/data/bikes";
 import type { Dictionary } from "@/data/dictionary";
 import type { Lang } from "@/lib/types";
@@ -50,6 +51,24 @@ export function Footer({ lang, dict }: FooterProps) {
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed">{dict.footer.description}</p>
+
+          <address className="mt-4 space-y-2 text-sm not-italic leading-relaxed text-zinc-400">
+            <p className="flex items-start gap-2">
+              <MapPin
+                aria-hidden="true"
+                className="mt-0.5 h-4 w-4 shrink-0 text-brand"
+              />
+              <span>{BUSINESS_INFO.address}</span>
+            </p>
+            <a
+              href={`tel:+${BUSINESS_INFO.whatsappNumber}`}
+              className="flex items-center gap-2 transition hover:text-brand"
+            >
+              <Phone aria-hidden="true" className="h-4 w-4 shrink-0 text-brand" />
+              <span>{BUSINESS_INFO.phoneDisplay}</span>
+            </a>
+          </address>
+
           <div className="mt-5">
             <p className="text-xs font-bold uppercase tracking-wider text-zinc-500">
               {dict.footer.followUs}
@@ -72,6 +91,22 @@ export function Footer({ lang, dict }: FooterProps) {
                 className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-zinc-300 transition hover:bg-brand hover:text-brand-ink"
               >
                 <Instagram className="h-4 w-4" />
+              </a>
+              <a
+                href={`https://www.tiktok.com/@${BUSINESS_INFO.tiktok}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-zinc-300 transition hover:bg-brand hover:text-brand-ink"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-4 w-4 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.09-.13 1.63.1 1.08.65 2.08 1.48 2.74.79.63 1.86.97 2.9.87 1.6-.18 2.94-1.4 3.16-3 .05-.39.04-.79.04-1.19V.02z" />
+                </svg>
               </a>
               <a
                 href={`mailto:${BUSINESS_INFO.email}`}
@@ -129,13 +164,13 @@ export function Footer({ lang, dict }: FooterProps) {
             {dict.footer.areasTitle}
           </h3>
           <ul className="mt-4 space-y-2.5">
-            {dict.footer.areas.map((area) => (
-              <li key={area}>
+            {AREAS.map((area, index) => (
+              <li key={area.key}>
                 <a
-                  href="#katalog"
+                  href={`/${lang}/${area.slug[lang]}/`}
                   className="text-sm transition hover:text-brand"
                 >
-                  {area}
+                  {dict.footer.areas[index]}
                 </a>
               </li>
             ))}

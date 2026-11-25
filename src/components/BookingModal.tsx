@@ -130,7 +130,9 @@ export function BookingModal({ bike, lang, dict, onClose }: BookingModalProps) {
             <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-xl bg-white">
               <Image
                 src={bike.image}
-                alt={bike.name}
+                alt={`${bike.name} — ${
+                lang === "id" ? "sewa motor di Bali" : "motorbike rental in Bali"
+              }`}
                 fill
                 sizes="80px"
                 className="object-cover"

@@ -58,9 +58,9 @@ export function FaqSection({ lang, dict }: FaqSectionProps) {
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                 >
-                  <span className="text-sm font-extrabold text-brand-ink sm:text-base">
+                  <h3 className="text-sm font-extrabold text-brand-ink sm:text-base">
                     {item.question}
-                  </span>
+                  </h3>
                   <span
                     className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition ${
                       isOpen

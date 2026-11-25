@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       "x-default": "https://nadirentalbali.com/id/",
     },
   },
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: true },
 };
 
 export default function RootRedirectPage() {

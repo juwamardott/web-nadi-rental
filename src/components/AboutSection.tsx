@@ -14,7 +14,7 @@ export function AboutSection({ dict }: AboutSectionProps) {
           <div className="relative overflow-hidden rounded-3xl border-4 border-white shadow-lift">
             <div className="relative aspect-[4/3]">
               <Image
-                src="/images/gallery/handover-kuta.jpg"
+                src="/images/gallery/about.webp"
                 alt={dict.about.imageMainAlt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -26,7 +26,7 @@ export function AboutSection({ dict }: AboutSectionProps) {
           <div className="absolute -bottom-8 -right-2 hidden w-44 overflow-hidden rounded-2xl border-4 border-white shadow-card sm:block lg:-right-6">
             <div className="relative aspect-square">
               <Image
-                src="/images/gallery/riding-beach.jpg"
+                src="/images/gallery/about-mini.webp"
                 alt={dict.about.imageSecondaryAlt}
                 fill
                 sizes="176px"

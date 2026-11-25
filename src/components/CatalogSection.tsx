@@ -116,7 +116,9 @@ function BikeCard({ bike, lang, dict, onBook }: BikeCardProps) {
       <div className="relative aspect-[4/3] overflow-hidden bg-brand-surface">
         <Image
           src={bike.image}
-          alt={bike.name}
+          alt={`${bike.name} ${bike.year} — ${
+            lang === "id" ? "sewa motor di Bali" : "motorbike rental in Bali"
+          }`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="object-cover transition duration-500 group-hover:scale-105"
@@ -161,7 +163,7 @@ function BikeCard({ bike, lang, dict, onBook }: BikeCardProps) {
             <Star key={star} className="h-3 w-3 fill-current" />
           ))}
           <span className="ml-1 text-[11px] font-bold text-brand-muted">
-            {BUSINESS_INFO.rating.value.toFixed(1)}
+            {BUSINESS_INFO.rating.value}
           </span>
         </div>
 

@@ -4,7 +4,7 @@ const id = {
   meta: {
     title: "Sewa Motor Bali Terpercaya & Murah | Nadi Rental Bali",
     description:
-      "Sewa motor matic terbaru di Bali dengan gratis antar-jemput Bandara Ngurah Rai & Kuta. Harga mulai Rp 70.000/hari, gratis 2 helm SNI, phone holder, dan jas hujan. Booking cepat via WhatsApp.",
+      "Sewa motor matic terbaru di Bali dengan gratis antar-jemput Bandara Ngurah Rai & Kuta. Harga mulai Rp 50.000/hari, gratis 2 helm dan phone holder. Booking cepat via WhatsApp.",
     keywords: [
       "sewa motor bali",
       "rental motor bali",
@@ -32,15 +32,15 @@ const id = {
   hero: {
     badge: "Gratis Antar-Jemput Bandara Ngurah Rai & Kuta",
     titleLead: "Sewa Motor Bali Terpercaya,",
-    titleHighlight: "Bersih & Tanpa Ribet",
+    titleHighlight: "Murah & Tanpa Ribet",
     subtitle:
-      "Jelajahi keindahan Pulau Dewata dengan armada motor matic terbaru dan terawat. Proses cepat via WhatsApp, harga transparan, serta gratis 2 helm SNI, phone holder, dan jas hujan.",
+      "Jelajahi keindahan Pulau Dewata dengan armada motor matic terbaru dan terawat. Proses cepat via WhatsApp, harga transparan, serta gratis 2 helm dan phone holder.",
     ctaPrimary: "Pilih Motor & Harga",
     ctaSecondary: "Hubungi WhatsApp",
-    rating: "4.9/5 Rating dari 500+ Wisatawan Domestik & Mancanegara",
-    ratingShort: "4.9/5",
+    rating: "5/5 Rating dari 500+ Wisatawan Domestik & Mancanegara",
+    ratingShort: "5/5",
     ratingLabel: "dari 500+ ulasan",
-    statUnitValue: "8+",
+    statUnitValue: "100+",
     statUnitLabel: "Unit siap pakai",
     statAreaValue: "11",
     statAreaLabel: "Area antar-jemput",
@@ -54,9 +54,9 @@ const id = {
     label: "Tentang Kami",
     title: "Tentang Nadi Rental Bali",
     description1:
-      "Nadi Rental Bali hadir sebagai mitra perjalanan terbaik Anda selama berlibur maupun bekerja di Bali. Kami menyediakan unit sepeda motor keluaran terbaru yang selalu menjalani pengecekan mesin, rem, dan ban sebelum diserahkan kepada penyewa.",
+      "Nadi Rental Bali hadir sebagai mitra perjalanan terbaik Anda selama berlibur maupun bekerja di Bali. Kami menyediakan unit sepeda motor keluaran terbaru dengan kondisi terbaik sebelum diserahkan kepada penyewa.",
     description2:
-      "Setiap unit dicuci bersih, dilengkapi helm SNI, phone holder, dan jas hujan. Tim kami siap mengantar motor langsung ke bandara, hotel, atau vila Anda di seluruh area Bali Selatan.",
+      "Setiap unit dicuci bersih, dilengkapi helm dan phone holder. Tim kami siap mengantar motor langsung ke bandara, hotel, atau villa Anda di Bali.",
     areasTitle: "Cakupan Area Antar-Jemput",
     areas: [
       "Bandara Ngurah Rai",
@@ -75,9 +75,9 @@ const id = {
     badgeNote: "Sejak 2019 melayani wisatawan",
     imageMainAlt: "Serah terima motor di area Kuta, Bali",
     imageSecondaryAlt: "Riding motor menyusuri pantai Bali",
-    check1: "Pengecekan mesin, rem, dan ban sebelum serah terima",
-    check2: "Unit dicuci bersih setiap kali kembali",
-    check3: "Bantuan darurat 24 jam via WhatsApp",
+    check1: "Motor Terbaru dan Terawat",
+    check2: "Unit Dicek dan Dicuci Bersih Sebelum Dikirim ke Penyewa",
+    check3: "Gratis Pengiriman Bandara dan Kuta Area",
   },
   features: {
     label: "Keunggulan",
@@ -98,7 +98,7 @@ const id = {
       {
         title: "Gratis Antar-Jemput",
         description:
-          "Bebas biaya pengantaran dan penjemputan untuk area Bandara Ngurah Rai, Kuta, Legian, dan Seminyak.",
+          "Bebas biaya pengantaran dan penjemputan untuk area Bandara Ngurah Rai dan Kuta Area",
       },
       {
         title: "Booking Cepat Tanpa Ribet",
@@ -111,9 +111,9 @@ const id = {
     label: "Katalog & Harga",
     title: "Pilih Motor Favorit Anda",
     subtitle:
-      "Semua unit terbaru, terawat, dan sudah termasuk helm SNI, phone holder, serta jas hujan.",
+      "Semua unit terbaru, terawat, dan sudah termasuk helm dan phone holder.",
     freeBanner:
-      "🎁 GRATIS Setiap Penyewaan: 2 Helm SNI Bersih, Phone Holder Stang, dan 2 Jas Hujan!",
+      "🎁 GRATIS Setiap Penyewaan: 2 Helm dan Phone Holder!",
     filterAll: "Semua Unit (8)",
     filterDaily: "Matic Harian (110cc–125cc)",
     filterMaxi: "Matic Maxi & Touring (150cc–250cc)",
@@ -222,7 +222,7 @@ const id = {
       {
         question: "Apa saja syarat sewa motor di Nadi Rental Bali?",
         answer:
-          "Untuk WNI wajib memiliki e-KTP asli dan SIM C yang masih aktif. Untuk WNA wajib menunjukkan Paspor dan SIM Internasional (International Driving Permit) yang berlaku. Kami juga menahan jaminan identitas selama masa sewa sesuai ketentuan.",
+          "Untuk WNI wajib memiliki e-KTP asli dan SIM C yang masih aktif. Untuk WNA wajib menunjukkan Paspor dan SIM Internasional (International Driving Permit) yang berlaku.",
       },
       {
         question: "Area mana saja yang gratis antar-jemput?",
@@ -232,12 +232,12 @@ const id = {
       {
         question: "Apa saja perlengkapan yang didapat secara gratis?",
         answer:
-          "Setiap unit sudah dilengkapi 2 helm standar SNI yang bersih, 1 phone holder terpasang di stang, dan 2 jas hujan. Tidak ada biaya tambahan untuk perlengkapan tersebut.",
+          "Setiap unit sudah dilengkapi 2 helm dan phone holder. Tidak ada biaya tambahan untuk perlengkapan tersebut.",
       },
       {
         question: "Bagaimana metode pembayarannya?",
         answer:
-          "Pembayaran dapat dilakukan saat serah terima unit secara tunai (IDR), transfer bank, atau QRIS. Kami tidak meminta pembayaran di muka sebelum unit diserahkan.",
+          "Pembayaran dapat dilakukan saat serah terima unit secara Tunai (IDR), Card, Dollar, Transfer Bank, atau QRIS. Kami tidak meminta pembayaran di muka sebelum unit diserahkan.",
       },
       {
         question: "Bagaimana cara memperpanjang masa sewa?",
@@ -255,15 +255,15 @@ const id = {
     whatsappLabel: "WhatsApp / Telepon",
     emailLabel: "Email",
     hoursLabel: "Jam Operasional",
-    hours: "07.00 – 22.00 WITA",
+    hours: "08.00 – 22.00 WITA",
     hoursNote: "Setiap hari, termasuk hari libur",
     mapTitle: "Lokasi Nadi Rental Bali",
     mapCta: "Buka di Google Maps",
-    responseNote: "Balasan cepat, rata-rata di bawah 5 menit.",
+    responseNote: "Balasan cepat",
   },
   footer: {
     description:
-      "Rental motor matic terbaru di Bali dengan gratis antar-jemput Bandara Ngurah Rai, Kuta, Legian, dan Seminyak. Harga transparan, unit bersih, booking via WhatsApp.",
+      "Rental motor matic terbaru di Bali dengan gratis antar-jemput Bandara Ngurah Rai dan Kuta Area. Harga transparan, unit bersih, booking via WhatsApp.",
     popularTitle: "Unit Populer",
     navigationTitle: "Navigasi Cepat",
     areasTitle: "Area Layanan Populer",
@@ -287,7 +287,7 @@ const id = {
     bookNow: "Booking Sekarang",
     quickChat: "Chat Cepat",
     perDay: "/hari",
-    rating: "4.9/5",
+    rating: "5/5",
     close: "Tutup",
   },
 };
@@ -298,7 +298,7 @@ const en: Dictionary = {
   meta: {
     title: "Trusted & Affordable Motorbike Rental in Bali | Nadi Rental Bali",
     description:
-      "Rent late-model scooters in Bali with free Ngurah Rai Airport & Kuta delivery. Rates from Rp 70,000/day, free 2 SNI helmets, phone holder, and raincoats. Fast WhatsApp booking.",
+      "Rent late-model scooters in Bali with free Ngurah Rai Airport & Kuta delivery. Rates from Rp 50,000/day, free 2 helmets and a phone holder. Fast WhatsApp booking.",
     keywords: [
       "motorbike rental bali",
       "scooter rental bali",
@@ -325,16 +325,16 @@ const en: Dictionary = {
   },
   hero: {
     badge: "Free Ngurah Rai Airport & Kuta Delivery",
-    titleLead: "Trusted, Clean & Hassle-Free",
-    titleHighlight: "Motorbike Rental in Bali",
+    titleLead: "Trusted Motorbike Rental in Bali",
+    titleHighlight: "Affordable & Hassle-Free",
     subtitle:
-      "Explore the Island of the Gods with our latest, well-maintained scooters. Fast WhatsApp booking, transparent pricing, plus free 2 SNI helmets, phone holder, and raincoats.",
+      "Explore the Island of the Gods with our latest, well-maintained scooters. Fast WhatsApp booking, transparent pricing, plus free 2 helmets and a phone holder.",
     ctaPrimary: "View Bikes & Rates",
     ctaSecondary: "Chat on WhatsApp",
-    rating: "4.9/5 Rated by 500+ Local & International Travelers",
-    ratingShort: "4.9/5",
+    rating: "5/5 Rated by 500+ Local & International Travelers",
+    ratingShort: "5/5",
     ratingLabel: "from 500+ reviews",
-    statUnitValue: "8+",
+    statUnitValue: "100+",
     statUnitLabel: "Ready-to-ride units",
     statAreaValue: "11",
     statAreaLabel: "Delivery areas",
@@ -348,9 +348,9 @@ const en: Dictionary = {
     label: "About Us",
     title: "About Nadi Rental Bali",
     description1:
-      "Nadi Rental Bali is your trusted travel companion for holidays and business trips in Bali. We provide late-model scooters that undergo thorough engine, brake, and tire inspections prior to every handover.",
+      "Nadi Rental Bali is your trusted travel companion for holidays and business trips in Bali. We provide late-model scooters in excellent condition before every handover.",
     description2:
-      "Every unit is cleaned thoroughly and comes with SNI helmets, a phone holder, and raincoats. Our team delivers directly to your airport terminal, hotel, or villa across South Bali.",
+      "Every unit is cleaned thoroughly and comes with 2 helmets and a phone holder. Our team delivers directly to your airport terminal, hotel, or villa in Bali.",
     areasTitle: "Delivery Coverage Area",
     areas: [
       "Ngurah Rai Airport",
@@ -369,9 +369,9 @@ const en: Dictionary = {
     badgeNote: "Serving travelers since 2019",
     imageMainAlt: "Motorbike handover in the Kuta area, Bali",
     imageSecondaryAlt: "Riding a scooter along the Bali coast",
-    check1: "Engine, brake, and tire inspection before every handover",
-    check2: "Every unit is washed and sanitized after each rental",
-    check3: "24-hour emergency assistance via WhatsApp",
+    check1: "Late-model, well-maintained scooters",
+    check2: "Checked and cleaned before being delivered to the renter",
+    check3: "Free delivery to Ngurah Rai Airport and the Kuta area",
   },
   features: {
     label: "Why Choose Us",
@@ -392,7 +392,7 @@ const en: Dictionary = {
       {
         title: "Free Delivery & Pick-Up",
         description:
-          "Complimentary delivery and pick-up for Ngurah Rai Airport, Kuta, Legian, and Seminyak.",
+          "Complimentary delivery and pick-up for Ngurah Rai Airport and the Kuta area.",
       },
       {
         title: "Fast & Easy Booking",
@@ -405,9 +405,9 @@ const en: Dictionary = {
     label: "Catalog & Rates",
     title: "Choose Your Favorite Ride",
     subtitle:
-      "All units are late-model, well-maintained, and include SNI helmets, a phone holder, and raincoats.",
+      "All units are late-model, well-maintained, and include 2 helmets and a phone holder.",
     freeBanner:
-      "🎁 FREE With Every Rental: 2 Clean Helmets, Handlebar Phone Holder, and 2 Raincoats!",
+      "🎁 FREE With Every Rental: 2 Helmets and a Phone Holder!",
     filterAll: "All Bikes (8)",
     filterDaily: "Daily Scooters (110cc–125cc)",
     filterMaxi: "Maxi & Touring (150cc–250cc)",
@@ -516,7 +516,7 @@ const en: Dictionary = {
       {
         question: "What are the requirements to rent a motorbike?",
         answer:
-          "Indonesian citizens must present an original e-KTP and a valid SIM C license. Foreign nationals must present a valid passport and an International Driving Permit (IDP). We also retain an identity deposit for the rental period as per our terms.",
+          "Indonesian citizens must present an original e-KTP and a valid SIM C license. Foreign nationals must present a valid passport and a valid International Driving Permit (IDP).",
       },
       {
         question: "Which areas qualify for free delivery?",
@@ -526,12 +526,12 @@ const en: Dictionary = {
       {
         question: "What equipment is included for free?",
         answer:
-          "Every unit comes with 2 clean SNI-standard helmets, 1 handlebar phone holder, and 2 raincoats at no extra cost.",
+          "Every unit comes with 2 helmets and a phone holder. There is no extra charge for this equipment.",
       },
       {
         question: "What payment methods do you accept?",
         answer:
-          "Payment is made upon handover in cash (IDR), by bank transfer, or via QRIS. We never ask for prepayment before the unit is handed over.",
+          "Payment is made upon handover in cash (IDR), by card, in US dollars, by bank transfer, or via QRIS. We never ask for prepayment before the unit is handed over.",
       },
       {
         question: "How do I extend my rental period?",
@@ -549,15 +549,15 @@ const en: Dictionary = {
     whatsappLabel: "WhatsApp / Phone",
     emailLabel: "Email",
     hoursLabel: "Operating Hours",
-    hours: "07.00 – 22.00 WITA",
+    hours: "08.00 – 22.00 WITA",
     hoursNote: "Every day, including public holidays",
     mapTitle: "Nadi Rental Bali Location",
     mapCta: "Open in Google Maps",
-    responseNote: "Fast replies, usually under 5 minutes.",
+    responseNote: "Fast replies.",
   },
   footer: {
     description:
-      "Late-model scooter rental in Bali with free Ngurah Rai Airport, Kuta, Legian, and Seminyak delivery. Transparent pricing, clean units, WhatsApp booking.",
+      "Late-model scooter rental in Bali with free Ngurah Rai Airport and Kuta area delivery. Transparent pricing, clean units, WhatsApp booking.",
     popularTitle: "Popular Bikes",
     navigationTitle: "Quick Navigation",
     areasTitle: "Popular Service Areas",
@@ -580,7 +580,7 @@ const en: Dictionary = {
     bookNow: "Book Now",
     quickChat: "Quick Chat",
     perDay: "/day",
-    rating: "4.9/5",
+    rating: "5/5",
     close: "Close",
   },
 };

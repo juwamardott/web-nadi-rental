@@ -8,12 +8,12 @@ interface GalleryReviewsProps {
 }
 
 const PHOTOS = [
-  "/images/gallery/handover-kuta.jpg",
-  "/images/gallery/riding-coast.jpg",
-  "/images/gallery/riding-beach.jpg",
-  "/images/gallery/mountain-ride.jpg",
-  "/images/gallery/tanah-lot.jpg",
-  "/images/gallery/rice-terrace.jpg",
+  "/images/gallery/galeri-4.webp",
+  "/images/gallery/galeri-2.webp",
+  "/images/gallery/galeri-7.webp",
+  "/images/gallery/galeri-8.webp",
+  "/images/gallery/galeri-5.webp",
+  "/images/gallery/galeri-6.webp",
 ];
 
 export function GalleryReviews({ dict }: GalleryReviewsProps) {
@@ -61,9 +61,9 @@ export function GalleryReviews({ dict }: GalleryReviewsProps) {
                 className="object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-ink/70 via-transparent to-transparent" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-3 text-xs font-semibold text-white">
+              {/* <figcaption className="absolute inset-x-0 bottom-0 p-3 text-xs font-semibold text-white">
                 {dict.gallery.captions[index]}
-              </figcaption>
+              </figcaption> */}
             </figure>
           ))}
         </div>

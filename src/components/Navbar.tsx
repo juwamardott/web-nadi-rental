@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Bike, Menu, MessageCircle, X } from "lucide-react";
+import { Menu, MessageCircle, X } from "lucide-react";
 import type { Dictionary } from "@/data/dictionary";
 import type { Lang } from "@/lib/types";
 import { buildGeneralWhatsAppUrl } from "@/lib/whatsapp";
@@ -42,9 +42,14 @@ export function Navbar({ lang, dict }: NavbarProps) {
     >
       <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-[72px]">
         <a href="#hero" className="flex items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand text-brand-ink shadow-glow">
-            <Bike className="h-5 w-5" strokeWidth={2.4} />
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt=""
+            width={256}
+            height={259}
+            priority
+            className="h-11 w-11 object-contain sm:h-12 sm:w-12"
+          />
           <span className="leading-none">
             <span className="block text-base font-extrabold tracking-tight text-brand-ink">
               Nadi Rental
@@ -68,26 +73,6 @@ export function Navbar({ lang, dict }: NavbarProps) {
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
-          <div
-            className="hidden items-center rounded-full border border-brand-border bg-brand-surface p-1 sm:flex"
-            aria-label={dict.nav.languageLabel}
-          >
-            {(["id", "en"] as Lang[]).map((code) => (
-              <Link
-                key={code}
-                href={`/${code}/`}
-                aria-current={lang === code ? "true" : undefined}
-                className={`rounded-full px-2.5 py-1 text-xs font-extrabold uppercase transition ${
-                  lang === code
-                    ? "bg-brand text-brand-ink shadow-sm"
-                    : "text-brand-muted hover:text-brand-ink"
-                }`}
-              >
-                {code}
-              </Link>
-            ))}
-          </div>
-
           <a
             href={buildGeneralWhatsAppUrl(lang)}
             target="_blank"
@@ -124,27 +109,12 @@ export function Navbar({ lang, dict }: NavbarProps) {
               </a>
             ))}
 
-            <div className="mt-3 flex items-center justify-between gap-3 border-t border-brand-border pt-4">
-              <div className="flex items-center rounded-full border border-brand-border bg-brand-surface p-1">
-                {(["id", "en"] as Lang[]).map((code) => (
-                  <Link
-                    key={code}
-                    href={`/${code}/`}
-                    className={`rounded-full px-3 py-1.5 text-xs font-extrabold uppercase transition ${
-                      lang === code
-                        ? "bg-brand text-brand-ink shadow-sm"
-                        : "text-brand-muted"
-                    }`}
-                  >
-                    {code}
-                  </Link>
-                ))}
-              </div>
+            <div className="mt-3 border-t border-brand-border pt-4">
               <a
                 href={buildGeneralWhatsAppUrl(lang)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary !px-4 !py-2.5"
+                className="btn-primary w-full !px-4 !py-2.5"
               >
                 <MessageCircle className="h-4 w-4" />
                 {dict.nav.cta}

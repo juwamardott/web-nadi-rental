@@ -45,8 +45,10 @@ export function GalleryReviews({ dict }: GalleryReviewsProps) {
               key={photo}
               className={`group relative overflow-hidden rounded-2xl border border-brand-border bg-white ${
                 index === 0
-                  ? "col-span-2 row-span-2"
-                  : "aspect-[4/3]"
+                  ? "col-span-2 aspect-[16/10] sm:row-span-2 sm:aspect-auto"
+                  : index === PHOTOS.length - 1
+                    ? "aspect-[4/3] max-sm:col-span-2 max-sm:aspect-[16/10]"
+                    : "aspect-[4/3]"
               }`}
             >
               <Image
@@ -56,7 +58,9 @@ export function GalleryReviews({ dict }: GalleryReviewsProps) {
                 sizes={
                   index === 0
                     ? "(max-width: 640px) 100vw, 66vw"
-                    : "(max-width: 640px) 50vw, 33vw"
+                    : index === PHOTOS.length - 1
+                      ? "(max-width: 640px) 100vw, 33vw"
+                      : "(max-width: 640px) 50vw, 33vw"
                 }
                 className="object-cover transition duration-500 group-hover:scale-105"
               />

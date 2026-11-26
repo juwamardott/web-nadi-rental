@@ -114,11 +114,10 @@ const id = {
       "Semua unit terbaru, terawat, dan sudah termasuk helm dan phone holder.",
     freeBanner:
       "🎁 GRATIS Setiap Penyewaan: 2 Helm dan Phone Holder!",
-    filterAll: "Semua Unit (8)",
+    filterAll: "Semua Unit",
     filterDaily: "Matic Harian (110cc–125cc)",
     filterMaxi: "Matic Maxi & Touring (150cc–250cc)",
     popular: "Terpopuler",
-    year: "Tahun",
     book: "Booking Unit Ini",
     quickChat: "Chat Cepat",
     perDay: "/hari",
@@ -227,7 +226,7 @@ const id = {
       {
         question: "Area mana saja yang gratis antar-jemput?",
         answer:
-          "Gratis antar-jemput untuk Bandara Ngurah Rai, Kuta, Legian, dan Seminyak dengan minimal sewa 2 hari. Area Canggu, Jimbaran, Nusa Dua, Sanur, dan Ubud tersedia dengan biaya pengantaran yang sangat terjangkau.",
+          "Gratis antar-jemput untuk Bandara Ngurah Rai dan area Kuta dengan minimal sewa 2 hari. Area Canggu, Legian, Seminyak, Jimbaran, Nusa Dua, Sanur, dan Ubud tersedia dengan biaya pengantaran yang sangat terjangkau.",
       },
       {
         question: "Apa saja perlengkapan yang didapat secara gratis?",
@@ -408,11 +407,10 @@ const en: Dictionary = {
       "All units are late-model, well-maintained, and include 2 helmets and a phone holder.",
     freeBanner:
       "🎁 FREE With Every Rental: 2 Helmets and a Phone Holder!",
-    filterAll: "All Bikes (8)",
+    filterAll: "All Bikes",
     filterDaily: "Daily Scooters (110cc–125cc)",
     filterMaxi: "Maxi & Touring (150cc–250cc)",
     popular: "Most Popular",
-    year: "Year",
     book: "Book This Bike",
     quickChat: "Quick Chat",
     perDay: "/day",

@@ -7,7 +7,6 @@ export interface Bike {
   name: string;
   category: BikeCategory;
   cc: number;
-  year: string;
   priceDaily: number;
   popular: boolean;
   image: string;

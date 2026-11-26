@@ -35,10 +35,19 @@ export function CatalogSection({ lang, dict }: CatalogSectionProps) {
     [filter]
   );
 
-  const tabs: { id: Filter; label: string }[] = [
-    { id: "all", label: dict.catalog.filterAll },
-    { id: "daily", label: dict.catalog.filterDaily },
-    { id: "maxi", label: dict.catalog.filterMaxi },
+  const counts = useMemo(
+    () => ({
+      all: BIKES.length,
+      daily: BIKES.filter((bike) => bike.category === "daily").length,
+      maxi: BIKES.filter((bike) => bike.category === "maxi").length,
+    }),
+    []
+  );
+
+  const tabs: { id: Filter; label: string; count: number }[] = [
+    { id: "all", label: dict.catalog.filterAll, count: counts.all },
+    { id: "daily", label: dict.catalog.filterDaily, count: counts.daily },
+    { id: "maxi", label: dict.catalog.filterMaxi, count: counts.maxi },
   ];
 
   return (
@@ -66,13 +75,22 @@ export function CatalogSection({ lang, dict }: CatalogSectionProps) {
               type="button"
               onClick={() => setFilter(tab.id)}
               aria-pressed={filter === tab.id}
-              className={`whitespace-nowrap rounded-full border px-4 py-2.5 text-sm font-bold transition ${
+              className={`flex items-center gap-2 whitespace-nowrap rounded-full border px-4 py-2.5 text-sm font-bold transition ${
                 filter === tab.id
                   ? "border-brand bg-brand text-brand-ink shadow-glow"
                   : "border-brand-border bg-white text-zinc-600 hover:border-brand hover:text-brand-ink"
               }`}
             >
               {tab.label}
+              <span
+                className={`rounded-full px-1.5 py-0.5 text-[11px] font-extrabold leading-none ${
+                  filter === tab.id
+                    ? "bg-white/70 text-brand-ink"
+                    : "bg-brand-surface text-brand-muted"
+                }`}
+              >
+                {tab.count}
+              </span>
             </button>
           ))}
         </div>
@@ -116,7 +134,7 @@ function BikeCard({ bike, lang, dict, onBook }: BikeCardProps) {
       <div className="relative aspect-[4/3] overflow-hidden bg-brand-surface">
         <Image
           src={bike.image}
-          alt={`${bike.name} ${bike.year} — ${
+          alt={`${bike.name} — ${
             lang === "id" ? "sewa motor di Bali" : "motorbike rental in Bali"
           }`}
           fill
@@ -142,9 +160,6 @@ function BikeCard({ bike, lang, dict, onBook }: BikeCardProps) {
         <h3 className="text-base font-extrabold leading-snug text-brand-ink">
           {bike.name}
         </h3>
-        <p className="mt-1 text-[11px] font-semibold uppercase tracking-wide text-brand-muted">
-          {dict.catalog.year} {bike.year}
-        </p>
 
         <ul className="mt-3 space-y-1.5">
           {bike.specs[lang].map((spec) => (
